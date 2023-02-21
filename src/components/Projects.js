@@ -1,8 +1,8 @@
 /** @format */
 
 import React from 'react';
-import votevoice from '../assets/votevoice.jpeg';
-import googleui from '../assets/GoogleUI.png';
+import votevoice from '../assets/votevoice.webp';
+import googleui from '../assets/googleui.webp';
 
 const Projects = () => {
   const projects = [
