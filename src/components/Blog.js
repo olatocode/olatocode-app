@@ -1,4 +1,6 @@
-import React from "react";
+/** @format */
+
+import React from 'react';
 
 const Blog = () => {
   const post = [
@@ -6,6 +8,11 @@ const Blog = () => {
       img: 'https://miro.medium.com/v2/resize:fit:420/format:webp/1*z1bigZKxjx7prQEigNVTaA.jpeg',
       title: 'How to Get into Tech in Nigeria in 6 Steps',
       url: 'https://medium.com/@awosolat/how-to-get-into-tech-in-nigeria-in-6-steps-6fc9b68651ff',
+    },
+    {
+      img: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*hone1GSPoqICH-p8wc6sSQ.png',
+      title: '7 Ways to Become a Successful Software Engineer in Nigeria',
+      url: 'https://medium.com/@awosolat/7-ways-to-become-a-successful-software-engineer-in-nigeria-2672ad776385',
     },
   ];
 

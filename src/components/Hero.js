@@ -1,7 +1,7 @@
 /** @format */
 
 import React from 'react';
-import HeroImg from '../assets/olatoprofile.png';
+import HeroImg from '../assets/olatoprofile.webp';
 
 import {
   AiOutlineTwitter,
