@@ -5,10 +5,9 @@ import votevoice from '../assets/votevoice.webp';
 import googleui from '../assets/googleui.webp';
 import datavasity from '../assets/datavasity.png';
 
-
 const Projects = () => {
   const projects = [
-      {
+    {
       img: datavasity,
       title: 'Datavasity',
       desc: 'This is a learning platform for student who want to learn tech skills',
@@ -29,7 +28,6 @@ const Projects = () => {
       live: 'https://olatocode.github.io/googleui/',
       code: 'https://github.com/olatocode/googleui',
     },
-  
   ];
 
   return (
@@ -41,8 +39,8 @@ const Projects = () => {
           </h2>
 
           <p className="pb-5">
-            These are some of my best projects. I have built these with React,
-            MERN and vanilla CSS. Check them out.
+            These are some of my best projects. I have built these with
+            JavaScript(MERN) HTML, CSS and Wordpress Check them out.
           </p>
         </div>
 
