@@ -3,9 +3,18 @@
 import React from 'react';
 import votevoice from '../assets/votevoice.webp';
 import googleui from '../assets/googleui.webp';
+import datavasity from '../assets/datavasity.png';
+
 
 const Projects = () => {
   const projects = [
+      {
+      img: datavasity,
+      title: 'Datavasity',
+      desc: 'This is a learning platform for student who want to learn tech skills',
+      live: 'https://datavasity.com/',
+      code: '#',
+    },
     {
       img: votevoice,
       title: 'VoteVoice',
@@ -20,7 +29,7 @@ const Projects = () => {
       live: 'https://olatocode.github.io/googleui/',
       code: 'https://github.com/olatocode/googleui',
     },
-   
+  
   ];
 
   return (
