@@ -7,8 +7,6 @@ import datavasity from '../assets/datavasity.png';
 import healthcare from '../assets/healthcare.png';
 import finsocial from '../assets/finsocial.png';
 
-
-
 const Projects = () => {
   const projects = [
     {
@@ -21,7 +19,7 @@ const Projects = () => {
     {
       img: healthcare,
       title: 'Snh365healthcare',
-      desc: 'This is an Health care platform were users can book a appointment with a doctor, before buying their hebal medicine',
+      desc: 'This is a Health care platform where users can book an appointment with a doctor, before buying their herbal medicine.',
       live: 'https://snh-365-healthcare.org.ng/',
       code: '#',
     },
