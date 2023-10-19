@@ -5,6 +5,7 @@ import votevoice from '../assets/votevoice.webp';
 import googleui from '../assets/googleui.webp';
 import datavasity from '../assets/datavasity.png';
 import healthcare from '../assets/healthcare.png';
+import finsocial from '../assets/finsocial.png';
 
 
 
@@ -19,7 +20,7 @@ const Projects = () => {
     },
     {
       img: healthcare,
-      title: 'snh365healthcare',
+      title: 'Snh365healthcare',
       desc: 'This is an Health care platform were users can book a appointment with a doctor, before buying their hebal medicine',
       live: 'https://snh-365-healthcare.org.ng/',
       code: '#',
@@ -30,6 +31,13 @@ const Projects = () => {
       desc: ' An Election App. Built with ReactNative, Html & Css',
       live: 'https://play.google.com/store/apps/details?id=com.votevoice',
       code: 'https://github.com/olatocode',
+    },
+    {
+      img: finsocial,
+      title: 'Finsocial',
+      desc: 'This platform is meant to improve user financial management in terms of investment and savings',
+      live: 'https://finsocial.netlify.app/',
+      code: '#',
     },
     {
       img: googleui,
