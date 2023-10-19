@@ -4,6 +4,9 @@ import React from 'react';
 import votevoice from '../assets/votevoice.webp';
 import googleui from '../assets/googleui.webp';
 import datavasity from '../assets/datavasity.png';
+import healthcare from '../assets/healthcare.png';
+
+
 
 const Projects = () => {
   const projects = [
@@ -12,6 +15,13 @@ const Projects = () => {
       title: 'Datavasity',
       desc: 'This is a learning platform for student who want to learn tech skills',
       live: 'https://datavasity.com/',
+      code: '#',
+    },
+    {
+      img: healthcare,
+      title: 'snh365healthcare',
+      desc: 'This is an Health care platform were users can book a appointment with a doctor, before buying their hebal medicine',
+      live: 'https://snh-365-healthcare.org.ng/',
       code: '#',
     },
     {

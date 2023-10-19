@@ -8,7 +8,7 @@ const Contact = () => {
           Contact Me
         </h2>
         <p>
-          I am currently open for a fulltime Frontend Developer role. If you
+          I am currently open for a Fulltime Backend Developer role. If you
           want to discuss about that feel free to email me or call me.
         </p>
 
@@ -16,7 +16,7 @@ const Contact = () => {
           <span className="font-bold">Email:</span> awosolat@gmail.com
         </p>
         <p className="py-2">
-          <span className="font-bold">Phone:</span> +234 8032289461
+          <span className="font-bold">Phone:</span> +234-8032289461
         </p>
       </div>
     </section>
