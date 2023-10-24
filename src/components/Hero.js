@@ -5,8 +5,9 @@ import HeroImg from '../assets/olatoprofile.webp';
 
 import {
   AiOutlineTwitter,
-  AiOutlineFacebook,
+  // AiOutlineFacebook,
   AiOutlineLinkedin,
+  AiOutlineGithub,
 } from 'react-icons/ai';
 
 const Hero = () => {
@@ -41,11 +42,11 @@ const Hero = () => {
             </a>
 
             <a
-              href="https://www.facebook.com/tobi.awosola"
+              href="https://github.com/olatocode"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {' '}
-              <AiOutlineFacebook size={40} />{' '}
+              <AiOutlineGithub size={40} />{' '}
             </a>
           </div>
 
