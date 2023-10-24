@@ -13,9 +13,9 @@ const About = () => {
           </h2>
 
           <p className="pb-5">
-            Hi, My Name Is Tobi Awosola everyone calls me olatocode. I am a
-            Full-Stack Developer. I build beautifull websites/APIs with
-            React.js, Html, Css, Node.js, Express.js and MongoDB.
+            Hi, I'm Tobi Awosola also known as OlatoCode. I am a Full-Stack
+            Developer. I build beautiful Web Apps and APIs using Node.js,
+            (Express.js), MongoDB, React.js, Html,Css and php(wordpress).
           </p>
           <p className="pb-5">
             I am proficient in Backend and touch of Frontend skills like
