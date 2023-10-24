@@ -1,5 +1,7 @@
-import React from "react";
-import AboutImg from "../assets/laptop.webp";
+/** @format */
+
+import React from 'react';
+import AboutImg from '../assets/laptop.webp';
 
 const About = () => {
   return (
@@ -12,19 +14,23 @@ const About = () => {
 
           <p className="pb-5">
             Hi, My Name Is Tobi Awosola everyone calls me olatocode. I am a
-            Full-Stack Developer. I build beautifull websites/APIs with React.js, Html, Css,
-            Node.js, Express.js and MongoDB.
+            Full-Stack Developer. I build beautifull websites/APIs with
+            React.js, Html, Css, Node.js, Express.js and MongoDB.
           </p>
           <p className="pb-5">
-            I am proficient in Frontend skills like React.js, Redux, Redux Tool
-            Kit, Axios SaSS, Css3 and many more.
+            I am proficient in Backend and touch of Frontend skills like
+            React.js, Redux, Redux Tool Kit, Axios SaSS, Css3, Html5 and many
+            more.
           </p>
 
-          <p>In Backend I know Node.js, Express.js, MongoDB, and Mongoose</p>
+          <p>
+            My Backend skills involve JavaScript, Typescript, Node.js,
+            Express.js, MongoDB, Postgresql and MSQL
+          </p>
 
           <p>
-            In my spare time I reading tech articles and I like sharing the knowledge on my social networks,
-            Where I talk about programming theory and build various projects.
+            In my spare time I like reading tech articles and I like sharing my
+            knowledge with like minds.
           </p>
         </div>
 
