@@ -6,9 +6,17 @@ import googleui from '../assets/googleui.webp';
 import datavasity from '../assets/datavasity.png';
 import healthcare from '../assets/healthcare.png';
 import finsocial from '../assets/finsocial.png';
+import eventblown from '../assets/eventblown.webp';
 
 const Projects = () => {
   const projects = [
+    {
+      img: eventblown,
+      title: 'EventBlown',
+      desc: 'EventBlown is a platform to help event planners showcase their events online',
+      live: 'https://documenter.getpostman.com/view/19291153/UVz1MXSN',
+      code: 'https://github.com/olatocode/EventBlown',
+    },
     {
       img: datavasity,
       title: 'Datavasity',
