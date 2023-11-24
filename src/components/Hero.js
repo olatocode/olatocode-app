@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="hero-info pb-5 md:pb-0">
           <h1 className="text-4xl lg:text-6xl">
             Hi, <br />I am <span className="text-accent">o</span>latocode <br />
-            Full-stack Developer
+            Backend Engineer
           </h1>
 
           <p className="py-5">
-            I am proficient in JavaScript, React.js, Node.js and MongoDB.
+            I am proficient in JavaScript, Nodejs(Express.js) and MongoDB.
           </p>
 
           <div className="flex py-5 ">
