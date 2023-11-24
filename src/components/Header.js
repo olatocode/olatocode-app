@@ -31,7 +31,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1T5hv5oW44fBR_Qd5kt2U6cU72lwHuNr1/view?usp=drive_link"
+              href="https://docs.google.com/document/d/13e5ftyxa0UMR_3nc26Trbv6J_9cMEF1ZhYb9HC9OtEY/edit?usp=sharing"
               target="_blank"
               without
               rel="noreferrer"
