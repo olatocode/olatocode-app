@@ -24,11 +24,11 @@ body {
 }
 
 .bg-accent {
-    background: #7477FF;
+    background: #ab0020;
 }
 
 .text-accent {
-    color: #7477FF;
+    color: #ab0020;
 }
 
 
@@ -37,7 +37,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #7477FF;
+    color: #ab0020;
 }
 
 .mobile-nav {

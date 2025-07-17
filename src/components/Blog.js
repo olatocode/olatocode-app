@@ -17,31 +17,33 @@ const Blog = () => {
   ];
 
   return (
-    <section className="bg-primary text-white px-5 py-32" id="blog">
+    <section className="bg-[#facb33] text-dark px-5 py-32" id="blog">
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[100px] border-indigo-600 pb-2">
+          <h2 className="text-4xl font-bold mb-5 border-b-4 w-[100px] border-[#ab0020] pb-2">
             Blogs
           </h2>
 
-          <p className="pb-5">Some of my best blogs.</p>
+          <p className="pb-5 text-lg text-gray-700">Some of my best blogs.</p>
         </div>
-
         <div></div>
       </div>
 
       <div className="projects container mx-auto grid md:grid-cols-2 gap-10">
-        {post.map((item) => {
+        {post.map((item, idx) => {
           return (
-            <div>
-              <img src={item.img} alt={item.title} />
-              <h3 className="py-5 text-2xl">{item.title}</h3>
-              <a
-                href={item.url}
-                className=" btn bg-accent  border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent"
-              >
-                Read More
-              </a>
+            <div key={idx} className="bg-white rounded-lg shadow-md border border-secondary overflow-hidden hover:shadow-lg transition">
+              <img src={item.img} alt={item.title} className="w-full h-40 object-cover" />
+              <div className="p-5 flex flex-col h-full">
+                <h3 className="py-2 text-2xl text-[#ab0020] font-semibold mb-2">{item.title}</h3>
+                <a
+                  href={item.url}
+                  className="btn bg-recruiter border-2 border-recruiter text-white px-6 py-3 rounded hover:bg-[#ab0020] hover:border-[#ab0020] hover:text-white transition mt-auto"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  Read More
+                </a>
+              </div>
             </div>
           );
         })}

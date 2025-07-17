@@ -55,42 +55,40 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-primary text-white px-5 py-32" id="projects">
+    <section className="bg-primary text-dark px-5 py-32" id="projects">
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
+          <h2 className="text-4xl text-white font-bold mb-5 border-b-4 w-[180px] border-[#ab0020] pb-2">
             Projects
           </h2>
 
-          <p className="pb-5">
-            These are some of my best projects. I have built these with
-            JavaScript(MERN) HTML, CSS and Wordpress Check them out.
+          <p className="pb-5 text-lg text-white text-gray-700">
+            Here are some of my best projects, built with JavaScript (MERN), HTML, CSS, and WordPress.
           </p>
         </div>
-
         <div className="about-img"></div>
       </div>
 
       <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
         {projects.map((project, i) => {
           return (
-            <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} />
-              <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
-                <p className="py-5 text-center font-bold px-2 text-white">
-                  {project.desc}
-                </p>
-
-                <div className="mx-auto">
+            <div className="relative bg-white rounded-lg shadow-md border border-secondary overflow-hidden hover:shadow-lg transition" key={i}>
+              <img src={project.img} alt={project.title} className="w-full h-40 object-cover" />
+              <div className="p-5 flex flex-col h-full">
+                <h3 className="text-xl font-semibold text-[#ab0020] mb-2">{project.title}</h3>
+                <p className="flex-1 text-gray-700 mb-4">{project.desc}</p>
+                <div className="flex space-x-3 mt-auto">
                   <a
                     href={project.live}
-                    className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
+                    className="px-4 py-2 bg-recruiter text-white rounded hover:bg-[#ab0020] font-bold transition"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     Live
                   </a>
                   <a
                     href={project.code}
-                    className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
+                    className="px-4 py-2 bg-white border-2 border-[#ab0020] text-[#ab0020] rounded hover:bg-[#ab0020] hover:text-white font-bold transition"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     Code
                   </a>
