@@ -36,33 +36,38 @@ const Header = () => {
         </ul>
       </nav>
 
+      {/* Mobile Nav Overlay */}
+      {toggle && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          onClick={handleToggle}
+        ></div>
+      )}
       {/* Mobile Nav */}
       <nav
-        className={!toggle ? 'mobile-nav left-[-100%]' : 'mobile-nav left-0'}
+        className={`mobile-nav fixed top-0 left-0 h-full w-3/4 max-w-xs bg-primary text-[#facb33] z-50 transform transition-transform duration-300 md:hidden ${toggle ? 'translate-x-0' : '-translate-x-full'} rounded-r-2xl shadow-lg`}
+        style={{ minHeight: '100vh' }}
       >
-        <ul className="flex flex-col">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/#projects">Projects</a>
-          </li>
-          <li>
-            <a href="/#blog">Blog</a>
-          </li>
-          <li>
-            <a href="/#about">About</a>
-          </li>
-          <li>
-            <a href="/#contact">Contact</a>
-          </li>
+        {toggle && (
+          <button onClick={handleToggle} className="absolute top-4 right-4 p-2 bg-[#facb33] rounded-full text-primary shadow-lg">
+            <AiOutlineClose size={32} />
+          </button>
+        )}
+        <ul className="flex flex-col mt-20 space-y-0 px-8 text-lg font-semibold divide-y divide-[#facb33] divide-opacity-60">
+          <li className="py-4"><a href="/">Home</a></li>
+          <li className="py-4"><a href="/#projects">Projects</a></li>
+          <li className="py-4"><a href="/#blog">Blog</a></li>
+          <li className="py-4"><a href="/#about">About</a></li>
+          <li className="py-4"><a href="/#contact">Contact</a></li>
         </ul>
       </nav>
 
       {/* Toggle button */}
-      <button onClick={handleToggle} className="block md:hidden">
-        {!toggle ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
-      </button>
+      {!toggle && (
+        <button onClick={handleToggle} className="block md:hidden z-50">
+          <AiOutlineMenu size={30} />
+        </button>
+      )}
     </header>
   );
 };
