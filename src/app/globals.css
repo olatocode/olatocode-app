@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-lg;
+}
+
+.projects img {
+  width: 100%;
+}
+
+/* color */
+.bg-primary {
+  background: #0F172A;
+}
+
+.bg-secondery {
+  background: #1E293B;
+}
+
+.bg-accent {
+  background: #ab0020;
+}
+
+.text-accent {
+  color: #ab0020;
+}
+
+nav li a {
+  @apply px-4 py-5 text-lg;
+}
+
+nav li a:hover {
+  color: #ab0020;
+}
+
+.mobile-nav {
+  @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
+}
+
+/* Typography */
+h1 {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2, h3 {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+}
+
+/* Section spacing standardization */
+section {
+  @apply py-24 md:py-32;
+}
+
+/* Subtle shadows for depth */
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-shadow-hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure links are clickable */
+a {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+a[href^="http"],
+a[href^="https"],
+a[href^="mailto"],
+a[href^="tel"] {
+  pointer-events: auto;
+}
+

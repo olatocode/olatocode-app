@@ -1,37 +1,42 @@
-/** @format */
+'use client'
 
-import React, { useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import logo from '../assets/logo.png';
+import { useState } from 'react'
+import Link from 'next/link'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import Image from 'next/image'
+import logo from '@/assets/logo.png'
 
-const Header = () => {
-  const [toggle, setToggle] = useState(false);
+export default function Header() {
+  const [toggle, setToggle] = useState(false)
 
-  const handleToggle = () => setToggle(!toggle);
+  const handleToggle = () => setToggle(!toggle)
 
   return (
     <header className="flex justify-between items-center px-8 pt-8 pb-8 bg-primary text-[#facb33] fixed w-full z-10 shadow">
-      <a href="/" className="logo flex items-center">
-        <img src={logo} alt="Olatocode Logo" className="h-16 w-auto" />
-      </a>
+      <Link href="/" className="logo flex items-center">
+        <Image src={logo} alt="Olatocode Logo" width={64} height={64} className="h-16 w-auto" />
+      </Link>
 
       {/* Desktop Nav */}
       <nav className="hidden md:block">
         <ul className="flex">
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/#blog">Blog</a>
+            <a href="#blog">Blog</a>
           </li>
           <li>
-            <a href="/#about">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -54,11 +59,12 @@ const Header = () => {
           </button>
         )}
         <ul className="flex flex-col mt-20 space-y-0 px-8 text-lg font-semibold divide-y divide-[#facb33] divide-opacity-60">
-          <li className="py-4"><a href="/">Home</a></li>
-          <li className="py-4"><a href="/#projects">Projects</a></li>
-          <li className="py-4"><a href="/#blog">Blog</a></li>
-          <li className="py-4"><a href="/#about">About</a></li>
-          <li className="py-4"><a href="/#contact">Contact</a></li>
+          <li className="py-4"><Link href="/" onClick={handleToggle}>Home</Link></li>
+          <li className="py-4"><a href="#projects" onClick={handleToggle}>Projects</a></li>
+          <li className="py-4"><a href="#blog" onClick={handleToggle}>Blog</a></li>
+          <li className="py-4"><a href="#about" onClick={handleToggle}>About</a></li>
+          <li className="py-4"><a href="#skills" onClick={handleToggle}>Skills</a></li>
+          <li className="py-4"><a href="#contact" onClick={handleToggle}>Contact</a></li>
         </ul>
       </nav>
 
@@ -69,7 +75,5 @@ const Header = () => {
         </button>
       )}
     </header>
-  );
-};
-
-export default Header;
+  )
+}

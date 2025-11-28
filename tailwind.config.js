@@ -1,20 +1,21 @@
-/**
- * @format
- * @type {import('tailwindcss').Config}
- */
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
       colors: {
-        primary: '#f8fafc', // soft blue/white background
-        secondary: '#e0e7ef', // light blue-gray
-        accent: '#6366f1', // indigo-500
+        primary: '#0F172A', // dark slate background
+        secondary: '#1E293B', // slate-800
+        accent: '#ab0020', // red accent
         recruiter: '#2563eb', // blue-600
         dark: '#1e293b', // slate-800
+        yellow: '#facb33', // yellow background
       },
     },
   },
   plugins: [],
-};
+}

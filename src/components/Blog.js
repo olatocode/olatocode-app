@@ -17,7 +17,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className="bg-[#facb33] text-dark px-5 py-32" id="blog">
+    <section className="bg-gradient-to-br from-[#facb33] via-[#f8d966] to-[#f5e699] text-dark px-5 py-24 md:py-32" id="blog">
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
           <h2 className="text-4xl font-bold mb-5 border-b-4 w-[100px] border-[#ab0020] pb-2">
@@ -32,17 +32,22 @@ const Blog = () => {
       <div className="projects container mx-auto grid md:grid-cols-2 gap-10">
         {post.map((item, idx) => {
           return (
-            <div key={idx} className="bg-white rounded-lg shadow-md border border-secondary overflow-hidden hover:shadow-lg transition">
-              <img src={item.img} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="p-5 flex flex-col h-full">
+            <div key={idx} className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col" style={{ minHeight: '400px' }}>
+              <div className="w-full h-40 flex-shrink-0">
+                <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
                 <h3 className="py-2 text-2xl text-[#ab0020] font-semibold mb-2">{item.title}</h3>
-                <a
-                  href={item.url}
-                  className="btn bg-recruiter border-2 border-recruiter text-white px-6 py-3 rounded hover:bg-[#ab0020] hover:border-[#ab0020] hover:text-white transition mt-auto"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  Read More
-                </a>
+                <div className="mt-4">
+                  <a
+                    href={item.url}
+                    className="btn bg-[#0F172A] border-2 border-[#0F172A] text-white px-6 py-3 rounded hover:bg-[#ab0020] hover:border-[#ab0020] hover:text-white transition cursor-pointer inline-block text-center"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Read More
+                  </a>
+                </div>
               </div>
             </div>
           );
