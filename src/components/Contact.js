@@ -40,7 +40,7 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
               href="https://github.com/olatocode"
               target="_blank"
@@ -56,6 +56,14 @@ export default function Contact() {
               className="px-6 py-2 bg-[#0F172A] text-white rounded-lg hover:bg-[#ab0020] transition font-semibold"
             >
               Connect on X
+            </a>
+            <a
+              href="https://wa.me/2348032289461?text=Hi%20Tobi%2C%20I%27d%20like%20to%20chat%20about%20a%20backend%20role."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-[#22c55e] text-white rounded-lg hover:bg-[#16a34a] transition font-semibold"
+            >
+              Chat on WhatsApp
             </a>
           </div>
         </div>

@@ -12,9 +12,9 @@ export default function Header() {
   const handleToggle = () => setToggle(!toggle)
 
   return (
-    <header className="flex justify-between items-center px-8 pt-8 pb-8 bg-primary text-[#facb33] fixed w-full z-10 shadow">
+    <header className="flex justify-between items-center px-6 pt-4 pb-4 bg-primary text-[#facb33] fixed w-full z-10 shadow">
       <Link href="/" className="logo flex items-center">
-        <Image src={logo} alt="Olatocode Logo" width={64} height={64} className="h-16 w-auto" />
+        <Image src={logo} alt="Olatocode Logo" width={48} height={48} className="h-12 w-auto" />
       </Link>
 
       {/* Desktop Nav */}
@@ -25,6 +25,9 @@ export default function Header() {
           </li>
           <li>
             <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#highlights">Highlights</a>
           </li>
           <li>
             <a href="#blog">Blog</a>
@@ -61,6 +64,7 @@ export default function Header() {
         <ul className="flex flex-col mt-20 space-y-0 px-8 text-lg font-semibold divide-y divide-[#facb33] divide-opacity-60">
           <li className="py-4"><Link href="/" onClick={handleToggle}>Home</Link></li>
           <li className="py-4"><a href="#projects" onClick={handleToggle}>Projects</a></li>
+          <li className="py-4"><a href="#highlights" onClick={handleToggle}>Highlights</a></li>
           <li className="py-4"><a href="#blog" onClick={handleToggle}>Blog</a></li>
           <li className="py-4"><a href="#about" onClick={handleToggle}>About</a></li>
           <li className="py-4"><a href="#skills" onClick={handleToggle}>Skills</a></li>
@@ -70,7 +74,7 @@ export default function Header() {
 
       {/* Toggle button */}
       {!toggle && (
-        <button onClick={handleToggle} className="block md:hidden z-50">
+        <button onClick={handleToggle} className="block md:hidden z-50 text-[#facb33]">
           <AiOutlineMenu size={30} />
         </button>
       )}

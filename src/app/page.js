@@ -6,10 +6,12 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
+import Highlights from '@/components/Highlights'
 import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Loader from '@/components/Loader'
+import WhatsAppFloating from '@/components/WhatsAppFloating'
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -28,9 +30,11 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Highlights />
       <Blog />
       <Contact />
       <Footer />
+      <WhatsAppFloating />
     </>
   )
 }

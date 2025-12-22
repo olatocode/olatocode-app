@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { AiOutlineCheckCircle } from 'react-icons/ai'
 import AboutImg from '@/assets/laptop.webp'
 
 export default function About() {
@@ -15,26 +16,41 @@ export default function About() {
           <div className="mb-6">
             <h3 className="text-2xl font-semibold text-[#ab0020] mb-3">What I Can Do For You</h3>
             <p className="text-lg mb-4">
-              I'm <span className="font-semibold text-[#ab0020]">Tobi Awosola</span>, a Backend Engineer with 3+ years of experience building scalable, high-performance web applications and APIs. I specialize in designing robust backend systems that power modern web and mobile applications.
+              I'm <span className="font-semibold text-[#ab0020]">Tobi Awosola</span>, a Backend Engineer with 3+ years of experience building scalable APIs and backend systems for E‑commerce, FinTech, and healthcare products. I help teams turn business requirements into reliable backend services that are easy to maintain and extend.
             </p>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold text-[#ab0020] mb-2">My Expertise</h3>
-            <ul className="list-disc list-inside space-y-2 text-lg">
-              <li>Design and develop RESTful APIs and microservices architectures</li>
-              <li>Build scalable E-commerce and FinTech backend systems</li>
-              <li>Optimize database performance with MongoDB, PostgreSQL, and MySQL</li>
-              <li>Implement secure authentication and authorization systems</li>
-              <li>Write clean, maintainable, and well-documented code</li>
-            </ul>
+            <div className="space-y-3 text-lg">
+              <div className="flex items-start gap-2">
+                <AiOutlineCheckCircle className="mt-1 text-[#ab0020]" />
+                <p>Design and build RESTful APIs and backend services (Node.js, Express.js, TypeScript)</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <AiOutlineCheckCircle className="mt-1 text-[#ab0020]" />
+                <p>Architect scalable systems for E‑commerce and FinTech products</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <AiOutlineCheckCircle className="mt-1 text-[#ab0020]" />
+                <p>Model and optimize databases with MongoDB, PostgreSQL, and MySQL</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <AiOutlineCheckCircle className="mt-1 text-[#ab0020]" />
+                <p>Implement secure authentication, authorization, and input validation</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <AiOutlineCheckCircle className="mt-1 text-[#ab0020]" />
+                <p>Collaborate with frontend teams to ship features end‑to‑end</p>
+              </div>
+            </div>
           </div>
 
-          <p className="pb-5 text-lg">
-            I thrive in collaborative environments, value clean code, and enjoy solving real-world problems with technology. I'm always eager to learn, share knowledge, and contribute to impactful projects that drive business growth.
+          <p className="pb-3 text-lg">
+            I thrive in collaborative environments, value clean, well‑tested code, and enjoy solving real‑world problems with technology. I'm always eager to learn, share knowledge, and contribute to impactful projects that move key business metrics.
           </p>
           <p className="text-lg">
-            Outside of coding, I enjoy reading tech articles, contributing to open-source projects, and mentoring aspiring developers.
+            Outside of coding, I enjoy reading tech articles, contributing to open‑source, and mentoring aspiring developers.
           </p>
         </div>
 

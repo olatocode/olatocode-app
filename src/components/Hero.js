@@ -1,17 +1,48 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { SiX } from 'react-icons/si'
 import LinkedInImg from '@/assets/profile.jpg'
 
 export default function Hero() {
+  const fullText = 'I am Tobi Awosola'
+  const prefix = 'I am '
+  const namePart = 'Tobi Awosola'
+
+  const [typed, setTyped] = useState('')
+
+  useEffect(() => {
+    let i = 0
+    const interval = setInterval(() => {
+      i += 1
+      setTyped(fullText.slice(0, i))
+      if (i >= fullText.length) {
+        clearInterval(interval)
+      }
+    }, 200)
+
+    return () => clearInterval(interval)
+  }, [])
+
+  const typedPrefix = typed.slice(0, prefix.length)
+  const typedName = typed.slice(prefix.length)
+
   return (
     <section className="bg-gradient-to-br from-[#facb33] via-[#f8d966] to-[#f5e699] px-5 py-24 md:py-32 text-gray-900">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between gap-10">
         <div className="hero-info pb-5 md:pb-0">
           <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-            Hi, <br />I am <span className="text-[#ab0020]">Tobi Awosola</span> 
+            Hi,
+            <br />
+            <span className="inline-block">
+              <span>{typedPrefix}</span>
+              <span className="text-[#ab0020]">
+                {typedName}
+                {typed.length < fullText.length && <span className="animate-pulse">|</span>}
+              </span>
+            </span>
           </h1>
 
           <p className="py-5 text-lg text-gray-700">

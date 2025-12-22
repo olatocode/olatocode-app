@@ -17,6 +17,21 @@ export const metadata = {
     title: 'Tobi Awosola - Backend Engineer Portfolio',
     description: 'Backend Engineer with 3+ years of experience building scalable applications',
     type: 'website',
+    url: 'https://olatocode-portfolio.vercel.app',
+    images: [
+      {
+        url: '/logo192.png',
+        width: 192,
+        height: 192,
+        alt: 'Tobi Awosola - Backend Engineer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tobi Awosola - Backend Engineer Portfolio',
+    description: 'Backend Engineer specializing in Node.js, TypeScript, and scalable backend systems for FinTech and E-commerce.',
+    images: ['/logo192.png'],
   },
 }
 

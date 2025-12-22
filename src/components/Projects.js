@@ -14,8 +14,14 @@ export default function Projects() {
       img: eventblown,
       title: 'EventBlown',
       desc: 'EventBlown is a platform to help event planners showcase their events online',
+      role: 'Backend Engineer',
       tech: ['Node.js', 'Express.js', 'MongoDB', 'REST API'],
-      impact: 'Built scalable event management API with authentication and booking system',
+      impact: 'Built scalable event management API with authentication, event CRUD, and booking flows',
+      highlights: [
+        'Designed RESTful API used by the event planning frontend',
+        'Implemented JWT-based authentication and role-based access control',
+        'Structured MongoDB models for events, tickets, and users',
+      ],
       live: 'https://documenter.getpostman.com/view/19291153/UVz1MXSN',
       code: 'https://github.com/olatocode/EventBlown',
     },
@@ -23,8 +29,13 @@ export default function Projects() {
       img: datavasity,
       title: 'Datavasity',
       desc: 'This is a learning platform for student who want to learn tech skills',
+      role: 'Backend / Platform Engineer',
       tech: ['WordPress', 'Elementor', 'php'],
       impact: 'Educational platform serving students with tech skill courses',
+      highlights: [
+        'Configured course, enrollment, and payment workflows',
+        'Customized WordPress theme and plugins for better UX',
+      ],
       live: 'https://datavasity.com/',
       code: '#',
     },
@@ -32,8 +43,13 @@ export default function Projects() {
       img: healthcare,
       title: 'Snh365healthcare',
       desc: 'This is a Health care platform where users can book an appointment with a doctor, before buying their herbal medicine.',
+      role: 'Backend / Platform Engineer',
       tech: ['WordPress', 'Elementor', 'php'],
       impact: 'Healthcare booking system enabling appointment scheduling and medicine orders',
+      highlights: [
+        'Set up appointment booking flows and email notifications',
+        'Integrated product catalog for herbal medicine sales',
+      ],
       live: 'https://snh-365-healthcare.org.ng/',
       code: '#',
     },
@@ -41,8 +57,13 @@ export default function Projects() {
       img: votevoice,
       title: 'VoteVoice',
       desc: ' An Election App. Built with ReactNative, Html & Css',
+      role: 'Backend / Mobile Engineer',
       tech: ['React Native', 'Node.js', 'MongoDB'],
       impact: 'Mobile election application for transparent voting processes',
+      highlights: [
+        'Implemented secure vote storage using MongoDB',
+        'Designed backend endpoints consumed by the React Native app',
+      ],
       live: 'https://play.google.com/store/apps/details?id=com.votevoice',
       code: 'https://github.com/olatocode',
     },
@@ -50,8 +71,13 @@ export default function Projects() {
       img: finsocial,
       title: 'Finsocial',
       desc: 'This platform is meant to improve user financial management in terms of investment and savings',
+      role: 'Backend Engineer',
       tech: ['React.js', 'Node.js', 'MongoDB'],
       impact: 'FinTech platform for financial management, investments, and savings tracking',
+      highlights: [
+        'Built backend features for savings and investment products',
+        'Worked on authentication and basic analytics endpoints',
+      ],
       live: 'https://finsocial.netlify.app/',
       code: '#',
     },
@@ -59,8 +85,12 @@ export default function Projects() {
       img: googleui,
       title: 'GoogleUI',
       desc: 'A simple Google UI Design using Html and Css',
+      role: 'Frontend Developer',
       tech: ['HTML5', 'CSS3'],
       impact: 'Responsive UI clone demonstrating frontend design skills',
+      highlights: [
+        'Recreated Google search homepage layout with responsive CSS',
+      ],
       live: 'https://olatocode.github.io/googleui/',
       code: 'https://github.com/olatocode/googleui',
     },
@@ -96,10 +126,23 @@ export default function Projects() {
               </div>
               <div className="p-5 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold text-[#ab0020] mb-2">{project.title}</h3>
-                <p className="text-gray-700 mb-3 flex-grow">{project.desc}</p>
+                {project.role && (
+                  <p className="text-sm font-semibold text-gray-800 mb-1">
+                    Role: {project.role}
+                  </p>
+                )}
+                <p className="text-gray-700 mb-2">{project.desc}</p>
                 
                 {project.impact && (
-                  <p className="text-sm text-gray-600 mb-3 italic">✨ {project.impact}</p>
+                  <p className="text-sm text-gray-600 mb-2 italic">✨ {project.impact}</p>
+                )}
+
+                {project.highlights && (
+                  <ul className="list-disc list-inside text-sm text-gray-600 mb-3 space-y-1">
+                    {project.highlights.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
                 )}
                 
                 {project.tech && (
