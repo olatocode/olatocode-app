@@ -46,7 +46,7 @@ export default function Hero() {
           </h1>
 
           <p className="py-5 text-lg text-gray-700">
-            Backend Engineer with 3+ years of experience building scalable E-commerce and FinTech applications
+            Backend Engineer with 4+ years of experience building scalable E-commerce and FinTech applications
             using Node.js, TypeScript, and Express.js.
           </p>
           
@@ -85,7 +85,7 @@ export default function Hero() {
               <span className="relative z-10">See Projects</span>
             </a>
             <a
-              href="/Tobi-Awosola-Resume.pdf"
+              href="/Tobi_Awosola_CV.pdf"
               download
               className="group relative bg-white text-[#ab0020] px-8 py-3 rounded-lg font-semibold border-2 border-[#ab0020] transition-all duration-300 hover:bg-[#ab0020] hover:text-white hover:shadow-lg hover:shadow-[#ab0020]/30 hover:-translate-y-1 active:translate-y-0"
             >
