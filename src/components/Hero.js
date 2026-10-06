@@ -46,7 +46,7 @@ export default function Hero() {
           </h1>
 
           <p className="py-5 text-lg text-gray-700">
-            Backend Engineer with 4+ years of experience building scalable E-commerce and FinTech applications
+            Software Engineer with 4+ years of experience building scalable E-commerce and FinTech applications
             using Node.js, TypeScript, and Express.js.
           </p>
           
