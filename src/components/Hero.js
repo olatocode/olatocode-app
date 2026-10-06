@@ -47,7 +47,7 @@ export default function Hero() {
 
           <p className="py-5 text-lg text-gray-700">
             Software Engineer with 4+ years of experience building scalable E-commerce and FinTech applications
-            using Node.js, TypeScript, and Express.js.
+            using Node.js, TypeScript, and Express.js, NestJS, React.js and Next.js
           </p>
           
           <p className="py-5 text-lg text-gray-700">
