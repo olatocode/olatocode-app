@@ -16,7 +16,7 @@ export default function About() {
           <div className="mb-6">
             <h3 className="text-2xl font-semibold text-[#ab0020] mb-3">What I Can Do For You</h3>
             <p className="text-lg mb-4">
-              I'm <span className="font-semibold text-[#ab0020]">Tobi Awosola</span>, a Backend Engineer with 3+ years of experience building scalable APIs and backend systems for E‑commerce, FinTech, and healthcare products. I help teams turn business requirements into reliable backend services that are easy to maintain and extend.
+              I'm <span className="font-semibold text-[#ab0020]">Tobi Awosola</span>, a Software Engineer with 4+ years of experience building scalable Web Apps, APIs and backend systems for E‑commerce, FinTech, and healthcare products. I help teams turn business requirements into reliable Digital platforms that are easy to maintain.
             </p>
           </div>
 
