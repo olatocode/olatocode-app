@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { AiOutlineGithub } from 'react-icons/ai'
+import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
 import { SiX } from 'react-icons/si'
-import LinkedInImg from '@/assets/profile.jpg'
+import LinkedInImg from '@/assets/profile.webp'
 
 export default function Hero() {
   const fullText = 'I am Tobi Awosola'
@@ -45,18 +45,27 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="py-5 text-lg text-gray-700">
-            Backend Engineer with 4+ years of experience building scalable E-commerce and FinTech applications
-            using Node.js, TypeScript, and Express.js.
+          <p className="py-5 text-lg md:text-xl font-semibold text-gray-800">
+            Backend Engineer with 4+ years of experience. I work with Node.js, TypeScript, NestJS, PostgreSQL,
+            and Redis, build Payments &amp; SaaS platforms, and enjoy shipping full-stack projects with Next.js and React.js.
           </p>
-          
+
           <p className="py-5 text-lg text-gray-700">
-            Proficient in designing RESTful APIs, working with both monolithic and microservices architectures,
-            and managing databases like MongoDB and PostgreSQL.
-            I focus on writing clean, secure and efficient backend code that drives performance and supports business growth.
+            Hi, thanks for stopping by! I love turning complex problems into simple, reliable APIs, whether it&apos;s
+            monoliths or microservices, MongoDB or PostgreSQL. I write clean, secure backend code that helps
+            businesses grow. Take a look around, and let&apos;s build something great together!
           </p>
 
           <div className="flex py-5 space-x-4">
+            <a
+              href="https://www.linkedin.com/in/tobi-awosolat/"
+              className="inline-block text-[#0a66c2] hover:text-[#004182]"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineLinkedin size={36} />
+            </a>
             <a
               href="https://twitter.com/olatocode"
               className="inline-block text-[#ab0020] hover:text-[#ab0020]"
