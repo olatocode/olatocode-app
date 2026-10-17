@@ -32,3 +32,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# agent tooling (local skills + session data)
+.agents/
+.playwright-mcp/
+skills-lock.json
+
+# screenshot artifacts
+/*.png
+/*.jpeg
