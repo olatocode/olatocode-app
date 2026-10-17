@@ -104,8 +104,8 @@ export default function Projects() {
             Projects
           </h2>
 
-          <p className="pb-5 text-lg text-white text-gray-700">
-            Here are some of my best projects, built with JavaScript (MERN), HTML, CSS, and WordPress.
+          <p className="pb-5 text-lg text-gray-300">
+            Things I&apos;ve built and loved working on, with JavaScript (MERN), HTML, CSS, and WordPress.
           </p>
         </div>
         <div className="about-img"></div>

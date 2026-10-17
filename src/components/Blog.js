@@ -24,7 +24,7 @@ const Blog = () => {
             Blogs
           </h2>
 
-          <p className="pb-5 text-lg text-gray-700">Some of my best blogs.</p>
+          <p className="pb-5 text-lg text-gray-700">Ideas, lessons, and stories from my journey. Hope they help you too!</p>
         </div>
         <div></div>
       </div>

@@ -10,12 +10,12 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'Tobi Awosola - Backend Engineer Portfolio | Node.js & TypeScript Expert',
-  description: 'Experienced Backend Engineer with 3+ years building scalable E-commerce and FinTech applications. Specialized in Node.js, Express.js, TypeScript, MongoDB, and PostgreSQL. Available for full-time backend engineering roles.',
+  description: 'Experienced Backend Engineer with 4+ years building scalable E-commerce and FinTech applications. Specialized in Node.js, Express.js, TypeScript, MongoDB, and PostgreSQL. Available for full-time backend engineering roles.',
   keywords: 'Backend Engineer, Node.js Developer, TypeScript, Express.js, MongoDB, PostgreSQL, REST APIs, FinTech, E-commerce, Software Engineer, Nigeria',
   authors: [{ name: 'Tobi Awosola' }],
   openGraph: {
     title: 'Tobi Awosola - Backend Engineer Portfolio',
-    description: 'Backend Engineer with 3+ years of experience building scalable applications',
+    description: 'Backend Engineer with 4+ years of experience building scalable applications',
     type: 'website',
     url: 'https://olatocode-portfolio.vercel.app',
     images: [

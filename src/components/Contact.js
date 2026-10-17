@@ -5,13 +5,15 @@ export default function Contact() {
     <section className="bg-gradient-to-br from-[#facb33] via-[#f8d966] to-[#f5e699] px-5 py-24 md:py-32" id="contact">
       <div className="text-center md:w-[70%] mx-auto text-dark">
         <h2 className="text-4xl font-bold mb-5 border-b-4 w-[200px] mx-auto border-[#ab0020] pb-2">
-          Let's Work Together
+          Let&apos;s Work Together
         </h2>
         <p className="text-xl mb-6 font-semibold">
-          I am currently open for a <span className="text-[#ab0020]">Full-time Backend Engineer</span> role
+          I am currently open for a <span className="text-[#ab0020]">Full-time Backend Engineer</span> or{' '}
+          <span className="text-[#ab0020]">Fullstack Engineer</span> role
         </p>
         <p className="text-lg mb-8">
-          Looking for a backend engineer who can build scalable APIs, optimize database performance, and deliver clean, maintainable code? Let's discuss how I can contribute to your team's success.
+          Have a role or project in mind? I&apos;d love to hear about it! Whether you need scalable APIs, faster
+          databases, or just clean, maintainable code, let&apos;s chat and see how I can help your team win.
         </p>
         
         <div className="bg-white rounded-lg shadow-xl p-8 mb-8 border border-gray-200">
@@ -48,6 +50,14 @@ export default function Contact() {
               className="px-6 py-2 bg-[#0F172A] text-white rounded-lg hover:bg-[#ab0020] transition font-semibold"
             >
               View GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tobi-awosolat/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-[#0a66c2] text-white rounded-lg hover:bg-[#004182] transition font-semibold"
+            >
+              Connect on LinkedIn
             </a>
             <a
               href="https://twitter.com/olatocode"
